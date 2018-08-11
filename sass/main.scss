@@ -1,3 +1,7 @@
     @import '../node_modules/bulma/bulma';
     @import 'base/variables';
+    @import 'utility/helper';
     @import 'base/general';
+    @import 'components/nav';
+    @import 'components/promobar';
+    @import 'components/search';

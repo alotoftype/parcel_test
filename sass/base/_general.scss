@@ -9,31 +9,31 @@ body {
 nav{
     display: flex;
     justify-content: space-between;
-    
+
     padding: 1em;
-    border: 1px solid #4d4d4d;
+    //border: 1px solid #4d4d4d;
 }
 .nav {
     li {
     display: inline-block;
     }
 }
-.homepage {
-    height: 400px;
-}
 
 .main-carousel {
-    height: 460px;
-  }
-.carousel-cell {
-    display: flex;
+    height: 560px;
+
+& .carousel-cell {
     width: 100%; /* full width */
-    height: 100%; /* height of carousel */
-    margin-right: 0px;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
+    height: 100%;
+    margin-right: 10px;
   }
+
+}
+
+
+
+/* move page dots into carousel */
+.flickity-page-dots { bottom: 10px; }
 
   .red {
     background: red;
@@ -44,8 +44,12 @@ nav{
 .green {
     background: green;
 }
+
+.homepage {
+    padding: 1rem 0;
+}
   .flickity-page-dots {
-    bottom: 0px;
+    bottom: 1.5em !important;
   }
   /* white circles */
   .flickity-page-dots .dot {
@@ -53,9 +57,204 @@ nav{
     height: 12px;
     opacity: 1;
     background: transparent;
-    border: 2px solid white;
+   // border: 2px solid white;
   }
   /* fill-in selected dot */
   .flickity-page-dots .dot.is-selected {
-    background: white;
+   // background: white;
+  }
+
+ header, .homepage_main {
+      max-width: 1440px;
+      margin: 0 auto;
+      //padding: 2em;
+  }
+
+  .homepage_main {
+    .homepage-featured__content {
+        @extend .columns;
+
+        .homepage-featured__content-message{
+            @extend .column;
+            text-align: center;
+            p {
+                margin: 2.4em 4.8em;
+            }
+        }
+    }
+    .homepage-full_width {
+        height: 53.1em;
+        background: #4d4d4d;
+        .hompage-full_width-message{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .full_width-message-content {
+                padding:2.4em;
+                text-align: center;
+            }
+
+
+            h2{
+                font-size: 5.6em;
+            }
+            p {
+                font-size: 2.4em;
+            }
+        }
+    }
+    .message_box1, .message_box2 {
+        @extend .column;
+        height: 35rem;
+        border: 1px solid #4d4d4d;
+        margin-top: 2.4rem;
+        background: $red;
+        box-sizing: content-box;
+    }
+
+    .homepage-featured__products {
+        @extend .columns;
+        @extend .is-desktop;
+        margin-top: 2rem;
+
+      & .homepage-featured__product {
+          @extend .column;
+          display:flex;
+          justify-content: center;
+
+      image {
+          width: 100%;
+      }
+      }
+    }
+    .homepage-featured__second-products{
+        @extend .columns;
+        padding: 1.2em 0;
+        .homepage-featured__second-product {
+        @extend .column;
+
+        }
+    }
+    .homepage-newsletter {
+        @extend .columns;
+        min-height: 34.6em;
+        background: skyblue;
+        .homepage-newsletter-message,
+        .homepage-newsletter-form {
+            @extend .column;
+        }
+        .homepage-newsletter-message {
+            @extend .is-multiline;
+            padding: 3.2em;
+            h2{
+                font-size: 4.6em;
+            }
+        }
+        .homepage-newsletter-form {
+            display: flex;
+            align-content: center;
+            form {
+                width: 60%;
+                margin: 5em auto;
+                div {
+                    @extend .field;
+                    input {
+                        width: 100%;
+                        height: 3.2em;
+                        background: none;
+                        border: none;
+                        border-bottom: 2px solid $blue;
+
+                    }
+                }
+                .submit-button {
+                    color: #fff;
+                    background: $blue;
+                    border-radius: 4em;
+                    display: block;
+                    font-size: 1.8em;
+                    padding: 1em 2.4em;
+                    width: 60%;
+                    margin: 0 auto;
+                    margin-top: 2.4em;
+                    text-align: center;
+
+                }
+            }
+        }
+    }
+    .homepage-instagram {
+        @extend .columns;
+        @extend .is-multiline;
+        justify-content: center;
+        .title {
+            text-align: center;
+            padding: 1.2em;
+        }
+        .title {
+            overflow: hidden;
+        }
+        .title h2 {
+            display: block;
+            position: relative;
+        }
+        .title:hover  h2:after {
+            background: #fff;
+            display: block;
+            content: "@roomify";
+            padding-right: 20em;
+            //position: relative;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .homepage-instagram-container{
+            @extend .columns;
+            @extend .is-3;
+            width: 100%;
+            justify-content: center;
+
+            .homepage-instagram-photos{
+                @extend .columns;
+                @extend .is-half-mobile;
+                @extend .is-one-quarter;
+                background: #4d4d4d url('http://via.placeholder.com/350x350') center;
+                width: 100%;
+                height: 30em;
+                margin: 1.2em;
+            }
+        }
+        .homepage-social-icons {
+            @extend .columns;
+            height: 20em;
+            div {
+                @extend .column;
+                @extend .is-offset-10;
+            }
+             li {
+                display: inline-block;
+            }
+        }
+    }
+
+  }
+  footer {
+    height: 34.6em;
+    background: $light-grey;
+    padding: 2.4rem;
+    .footer_signup {
+        //display: flex;
+        align-content: center;
+        justify-content: center;
+
+        h2, form{
+            width: 90%;
+            margin: 1.2em auto;
+        }
+        h2 {
+            text-align: center;
+        }
+
+    }
   }

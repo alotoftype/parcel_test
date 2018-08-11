@@ -1,0 +1,37 @@
+#mobile-nav {
+  @media screen and (min-width: $desktop){
+    display: none;
+  }
+}
+#desktop-nav {
+  @media screen and (max-width: $desktop){
+    display: none;
+  }
+}
+
+#navMenu {
+  position: absolute;
+  width: 100vw;
+  top:7.2em;
+  left: 0;
+  padding:1.2em;
+
+
+  .main-menu li{
+    padding: 2em;
+    border-bottom: 1px solid $primary;
+  }
+}
+.mobile-contact{
+  display: flex;
+  justify-content: space-evenly;
+
+  ul {
+    align-self: flex-end;
+  }
+  li {
+    padding: 0;
+    border: none;
+    display: inline-block;
+  }
+}

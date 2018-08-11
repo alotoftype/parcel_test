@@ -9,7 +9,12 @@
 </head>
 <body>
     <header>
-            <nav class="navbar" role="navigation" aria-label="main navigation">
+        <section id="promo_banner">
+            <div class="promo_banner_content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil impedit beatae, blanditiis accusamus dicta magni repudiandae! Ipsum deleniti quam, non molestias accusantium vel obcaecati error, ducimus sunt, dolor ad qui.</p>
+            </div>
+        </section>
+            <nav id="desktop-nav" class="navbar" role="navigation" aria-label="main navigation">
                     <section class="nav__section1">
                             <ul class="nav">
                                     <li><a href="#">link 1</a></li>
@@ -18,36 +23,272 @@
                                 </ul>
                     </section>
                     <div class="navbar-brand">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="138" viewBox="0 0 512 138" preserveAspectRatio="xMidYMid"><path d="M340.7 0L340.7 100.2C353 100.8 365.3 101.5 377.6 102.3L377.6 123.5C358.2 122.2 338.7 121.3 319.1 120.6L319.1 0 340.7 0ZM512 0L483.9 65.1 512 137.5 512 137.6C503.8 136.4 495.6 135.3 487.4 134.2L471.6 93.6 455.7 130.5C448.2 129.6 440.6 128.8 433 128.1L460.4 64.7 435.4 0 458.7 0 472.7 36.2 488.3 0 512 0ZM245.1 119.5L245.1 0 305.3 0 305.3 21.4 266.7 21.4 266.7 49.2 295.9 49.2 295.9 70.5 266.7 70.5 266.7 119.5 245.1 119.5ZM164.6 21.4L164.6 0 231.3 0 231.3 21.4 208.7 21.4 208.7 120.1C201.5 120.3 194.3 120.5 187.1 120.8L187.1 21.4 164.6 21.4ZM90.9 127L90.9 0 150.8 0 150.8 21.4 112.4 21.4 112.4 50.5C121.2 50.4 133.8 50.2 141.5 50.3L141.5 71.5C131.8 71.4 120.8 71.6 112.4 71.7L112.4 103.9C125.2 102.9 137.9 102 150.8 101.3L150.8 122.5C130.7 123.7 110.7 125.2 90.9 127ZM48.6 77.9L48.6 0 70.1 0 70.1 129C62.2 129.8 54.4 130.6 46.5 131.6L21.6 59.8 21.6 134.6C14.4 135.6 7.2 136.5 0 137.6L0 0 20.5 0 48.6 77.9ZM395.4 124.8L395.4 124.8 395.4 0 417 0 417 126.6C409.8 126 402.6 125.4 395.4 124.8Z" fill="#DB202C"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="20" viewBox="0 0 512 138" preserveAspectRatio="xMidYMid"><path d="M340.7 0L340.7 100.2C353 100.8 365.3 101.5 377.6 102.3L377.6 123.5C358.2 122.2 338.7 121.3 319.1 120.6L319.1 0 340.7 0ZM512 0L483.9 65.1 512 137.5 512 137.6C503.8 136.4 495.6 135.3 487.4 134.2L471.6 93.6 455.7 130.5C448.2 129.6 440.6 128.8 433 128.1L460.4 64.7 435.4 0 458.7 0 472.7 36.2 488.3 0 512 0ZM245.1 119.5L245.1 0 305.3 0 305.3 21.4 266.7 21.4 266.7 49.2 295.9 49.2 295.9 70.5 266.7 70.5 266.7 119.5 245.1 119.5ZM164.6 21.4L164.6 0 231.3 0 231.3 21.4 208.7 21.4 208.7 120.1C201.5 120.3 194.3 120.5 187.1 120.8L187.1 21.4 164.6 21.4ZM90.9 127L90.9 0 150.8 0 150.8 21.4 112.4 21.4 112.4 50.5C121.2 50.4 133.8 50.2 141.5 50.3L141.5 71.5C131.8 71.4 120.8 71.6 112.4 71.7L112.4 103.9C125.2 102.9 137.9 102 150.8 101.3L150.8 122.5C130.7 123.7 110.7 125.2 90.9 127ZM48.6 77.9L48.6 0 70.1 0 70.1 129C62.2 129.8 54.4 130.6 46.5 131.6L21.6 59.8 21.6 134.6C14.4 135.6 7.2 136.5 0 137.6L0 0 20.5 0 48.6 77.9ZM395.4 124.8L395.4 124.8 395.4 0 417 0 417 126.6C409.8 126 402.6 125.4 395.4 124.8Z" fill="#DB202C"/></svg>
                     </div>
                     <section class="nav__section2">
                             <ul class="nav">
-                                    <li><a href="#">Search</a></li>
+                                    <li><a href="#" class="search">search</a></li>
                                     <li><a href="#">Account</a></li>
                                     <li><a href="#">Cart</a></li>
                                 </ul>
 
                     </section>
-                    
                   </nav>
-    </header>
+                  <nav id="mobile-nav"class="navbar" role="navigation" aria-label="main navigation">
+                        <div class="navbar-brand">
+                          <a class="navbar-item" href="https://bulma.io">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="20" viewBox="0 0 512 138" preserveAspectRatio="xMidYMid"><path d="M340.7 0L340.7 100.2C353 100.8 365.3 101.5 377.6 102.3L377.6 123.5C358.2 122.2 338.7 121.3 319.1 120.6L319.1 0 340.7 0ZM512 0L483.9 65.1 512 137.5 512 137.6C503.8 136.4 495.6 135.3 487.4 134.2L471.6 93.6 455.7 130.5C448.2 129.6 440.6 128.8 433 128.1L460.4 64.7 435.4 0 458.7 0 472.7 36.2 488.3 0 512 0ZM245.1 119.5L245.1 0 305.3 0 305.3 21.4 266.7 21.4 266.7 49.2 295.9 49.2 295.9 70.5 266.7 70.5 266.7 119.5 245.1 119.5ZM164.6 21.4L164.6 0 231.3 0 231.3 21.4 208.7 21.4 208.7 120.1C201.5 120.3 194.3 120.5 187.1 120.8L187.1 21.4 164.6 21.4ZM90.9 127L90.9 0 150.8 0 150.8 21.4 112.4 21.4 112.4 50.5C121.2 50.4 133.8 50.2 141.5 50.3L141.5 71.5C131.8 71.4 120.8 71.6 112.4 71.7L112.4 103.9C125.2 102.9 137.9 102 150.8 101.3L150.8 122.5C130.7 123.7 110.7 125.2 90.9 127ZM48.6 77.9L48.6 0 70.1 0 70.1 129C62.2 129.8 54.4 130.6 46.5 131.6L21.6 59.8 21.6 134.6C14.4 135.6 7.2 136.5 0 137.6L0 0 20.5 0 48.6 77.9ZM395.4 124.8L395.4 124.8 395.4 0 417 0 417 126.6C409.8 126 402.6 125.4 395.4 124.8Z" fill="#DB202C"/></svg>
+                          </a>
+                        </div>
+                        <div>
+                          <a role="button" class="navbar-burger"
+                        data-target="navMenu"
+                          aria-label="menu" aria-expanded="false">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                          </a>
+                        </div>
+                        <div class="navbar-menu" id="navMenu">
+                                <div class="content">
+                                        <form action="" method="post">
+                                            <input type="text" name="" id="">
+                                            <button>submit</button>
+                                        </form>
+                                    </div>
+                                <ul class="main-menu">
+                                    <li><a href="">link 1</a></li>
+                                    <li><a href="">link 2</a></li>
+                                    <li><a href="">link 3</a></li>
+                                    <li><a href="">link 4</a></li>
+                                    <li><a href="">link 5</a></li>
+                                    <li><a href="">link 6</a></li>
+                                    <li><a href="">link 7</a></li>
+                                    <li><a href="">link 8</a></li>
+                                </ul>
+                                <div class="mobile-contact columns">
+                                    <div class="column">
+                                        <span>Contact</span>
+                                    </div>
+                                    <div class="column">
+                                        <ul>
+                                            <li><a href="">f</a></li>
+                                            <li><a href="">i</a></li>
+                                            <li><a href="">t</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                </div>
+                      </nav>
 
-<main>
-    <section class="homepage">
-    <div class="main-carousel">
-            <div class="carousel-cell red"><h2>This is box 1</h2></div>
-            <div class="carousel-cell green"><h2>This is box 2</h2></div>
-            <div class="carousel-cell blue"><h2>This is box 3</h2></div>
+                  <section id="search" class="hidden">
+                      <div class="content">
+                          <form action="" method="post">
+                              <input type="text" name="" id="">
+                              <button>submit</button>
+                          </form>
+                      </div>
+                  </section>
+    </header>
+<main class="homepage_main">
+
+    <section class="homepage-">
+        <div class="main-carousel">
+                <div class="carousel-cell red">
+                    <div class="carousel-content"></div>
+                </div>
+                <div class="carousel-cell blue">
+                        <div class="carousel-content"></div>
+                </div>
+                <div class="carousel-cell green">
+                        <div class="carousel-content"></div>
+                </div>
+        </div>
+</section>
+<section class="homepage-featured__products">
+    <div class="homepage-featured__product">
+        <div class="featured__product-content">
+            <img src="https://picsum.photos/300/400" alt="">
+            <div class="featured__product-info">
+                <div class="featured__product-title">
+                    <span>Product 1</span>
+                </div>
+                <span>$35.00</span>
+            </div>
+        </div>
+    </div>
+    <div class="homepage-featured__product">
+        <div class="featured__product-content">
+            <img src="https://picsum.photos/300/400" alt="">
+            <div class="featured__product-info">
+                <div class="featured__product-title">
+                    <span>Product 1</span>
+                </div>
+                <span>$35.00</span>
+            </div>
+        </div></div>
+    <div class="homepage-featured__product">
+        <div class="featured__product-content">
+            <img src="https://picsum.photos/300/400" alt="">
+            <div class="featured__product-info">
+                <div class="featured__product-title">
+                    <span>Product 1</span>
+                </div>
+                <span>$35.00</span>
+            </div>
+        </div></div>
+    <div class="homepage-featured__product">
+        <div class="featured__product-content">
+            <img src="https://picsum.photos/300/400" alt="">
+            <div class="featured__product-info">
+                <div class="featured__product-title">
+                    <span>Product 1</span>
+                </div>
+                <span>$35.00</span>
+            </div>
+        </div></div>
+</section>
+<section class="homepage-featured__content">
+        <div class="homepage-featured__content-message">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus iusto a, quasi dolor nesciunt, optio delectus eveniet, sit aliquid odit eum eligendi nam? Consectetur animi quae corporis perferendis ipsam. Laborum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati soluta, ipsam saepe corrupti, unde similique adipisci sequi accusamus atque quidem sint iure quae dolore. Ratione quas eius magnam tempore adipisci.</p>
+        </div>
+    </section>
+<section class="homepage-full_width columns">
+    <div class="hompage-full_width-message column is-half is-offset-6">
+        <div class="full_width-message-content is-multiline">
+                <h2>title</h2>
+                <p>subtext</p>
+                <a href="" class="button">cta message</a>
+        </div>
+
     </div>
 </section>
-<section>
-    <ul>
-        <li>color 1</li>
-        <li>color 2</li>
-        <li>color 3</li>
-        <li>color 4</li>
-    </ul>
+<section class="columns is-desktop">
+ <div class=" message_box1">
+    <p>message box 1</p>
+ </div>
+ <div class=" message_box2">
+    <p>message box 2</p>
+</div>
+</section>
+<section class="homepage-featured__second-products">
+    <div class="homepage-featured__second-product">
+            <div class="featured__product-content">
+                    <img src="https://picsum.photos/600/300" alt="">
+                    <div class="featured__product-info">
+                        <div class="featured__product-title">
+                            <span>Product 1</span>
+                        </div>
+                        <span>$35.00</span>
+                    </div>
+                </div>
+    </div>
+    <div class="homepage-featured__second-product">
+            <div class="featured__product-content">
+                    <img src="https://picsum.photos/600/300" alt="">
+                    <div class="featured__product-info">
+                        <div class="featured__product-title">
+                            <span>Product 1</span>
+                        </div>
+                        <span>$35.00</span>
+                    </div>
+                </div>
+    </div>
+    <div class="homepage-featured__second-product">
+            <div class="featured__product-content">
+                    <img src="https://picsum.photos/600/300" alt="">
+                    <div class="featured__product-info">
+                        <div class="featured__product-title">
+                            <span>Product 1</span>
+                        </div>
+                        <span>$35.00</span>
+                    </div>
+                </div>
+    </div>
+</section>
+<section class="homepage-newsletter">
+    <div class="homepage-newsletter-message">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+        <span class="subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim dolor, omnis eius praesentium autem officia.
+        </span>
+    </div>
+    <div class="homepage-newsletter-form">
+        <form action="">
+            <div>
+                <input type="text" name="" id="">
+            </div>
+            <div>
+                <input type="text" name="" id="">
+            </div>
+            <a href="" class="submit-button">submit</a>
+        </form>
+    </div>
+</section>
+<section class="homepage-instagram">
+    <div class="title">
+            <h2 data-title="@roomify">#instagram</h2>
+    </div>
+<div class="homepage-instagram-container">
+<div class="homepage-instagram-photos"></div>
+<div class="homepage-instagram-photos"></div>
+<div class="homepage-instagram-photos"></div>
+<div class="homepage-instagram-photos"></div>
+</div>
+<div class="homepage-social-icons columns">
+    <div class="columns">
+            <ul>
+                    <li><a href="">social 1</a></li>
+                    <li><a href="">social 2</a></li>
+                </ul>
+    </div>
+
+</div>
 </section>
 </main>
+<footer class="columns">
+<section class="footer_links column columns">
+    <div class="column">
+        <ul>
+            <li><a href="">link 1</a></li>
+            <li><a href="">link 2</a></li>
+            <li><a href="">link 3</a></li>
+            <li><a href="">link 4</a></li>
+        </ul>
+    </div>
+    <div class="column">
+            <ul>
+                    <li><a href="">link 1</a></li>
+                    <li><a href="">link 2</a></li>
+                    <li><a href="">link 3</a></li>
+                    <li><a href="">link 4</a></li>
+                </ul>
+    </div>
+    <div class="column">
+            <ul>
+                    <li><a href="">link 1</a></li>
+                    <li><a href="">link 2</a></li>
+                    <li><a href="">link 3</a></li>
+                    <li><a href="">link 4</a></li>
+                </ul>
+    </div>
+
+</section>
+<section class="footer_signup column">
+    <h2>we've got your back</h2>
+    <form action="">
+            <div class="field has-addons">
+                    <div class="control">
+                      <input class="input" type="text" placeholder="Find a repository">
+                    </div>
+                    <div class="control">
+                      <a class="button is-info">
+                        submit
+                      </a>
+                    </div>
+                  </div>
+    </form>
+</section>
+</footer>
 </body>
 </html>
